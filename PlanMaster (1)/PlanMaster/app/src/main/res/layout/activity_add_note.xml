@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".AddNoteActivity"
+        android:padding="12dp"
+    android:background="@drawable/bg7">
+        <TextView
+            android:id="@+id/addNoteHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins"
+            android:text="Add Note"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/saveButton"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignTop="@id/addNoteHeading"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="628dp"
+            android:layout_marginEnd="4dp"
+            android:background="@color/red"
+            android:src="@drawable/baseline_done_24" />
+
+        <EditText
+            android:id="@+id/titleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Enter the title"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:padding="12dp"
+            android:textSize="20sp"
+            android:background="@drawable/blue_border"
+            android:layout_below="@id/addNoteHeading"
+            android:layout_marginTop="16dp"
+            android:maxLines="1"
+            android:fontFamily="@font/poppins"/>
+        <EditText
+            android:id="@+id/contentEditText"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:hint="Enter the Discription"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:gravity="top"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:background="@drawable/blue_border"
+            android:layout_below="@id/titleEditText"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins"/>
+</RelativeLayout>
